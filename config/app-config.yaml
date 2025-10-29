@@ -1,16 +1,51 @@
+# Unified Application Configuration
+
 application:
   name: DevOpsSimulator
-  version: 1.0.0
+  version: 3.0.0-experimental
   environment: production
+  experimental_mode: false # set true for experimental features
 
 server:
   host: 0.0.0.0
   port: 8080
   ssl_enabled: true
+  multi_port: [8080, 8081, 9000] # extended ports for experimental mode
 
 logging:
   level: INFO
   format: json
+  output: /var/log/app.log
+  ai_analysis: disabled # enabled only in experimental mode
+
+database:
+  host: localhost
+  port: 5432
+  name: devops_prod
+  distributed: false
+
+features:
+  auto_scaling: standard
+  load_balancer: classic
+  backup_enabled: true
+  chaos_engineering: disabled # enabled in experimental mode
+
+ai_features:
+  predictive_scaling: false
+  anomaly_detection: false
+  auto_optimization: false
+  model_version: "v1.0.0"
+
+cloud_providers:
+  - aws
+  - azure
+  - gcp
+  # digitalocean included for experimental mode
+
+security:
+  zero_trust: disabled
+  encryption: AES-256
+  audit_logging: basic
 
 # Development configuration (enabled via environment variable)
 development:
@@ -19,3 +54,12 @@ development:
   hot_reload: false
   debug_mode: false
   mock_apis: false
+
+# Experimental configuration (toggle via environment variable)
+experimental:
+  enabled: false
+  server_port: 9000
+  ai_analysis: true
+  distributed_db: true
+  chaos_engineering: true
+  multi_cloud: [aws, azure, gcp, digitalocean]
