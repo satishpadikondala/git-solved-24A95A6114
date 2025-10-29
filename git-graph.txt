@@ -1,4 +1,5 @@
-* 3689412 (HEAD -> main, origin/main) docs: Add changelog
+* 37a8017 (HEAD -> main, origin/main) docs: Add final project artifacts
+* 3689412 docs: Add changelog
 * e1999ef docs: Add Git Mastery Challenge journey documentation
 | * d0c4b3b (feature/another-feature) Bad commit
 |/  
