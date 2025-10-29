@@ -1,0 +1,25 @@
+* 3689412 (HEAD -> main, origin/main) docs: Add changelog
+* e1999ef docs: Add Git Mastery Challenge journey documentation
+| * d0c4b3b (feature/another-feature) Bad commit
+|/  
+| * 5ee8b0b (origin/feature/another-feature) feat: Add test feature
+|/  
+* a07e425 (tag: v1.1.0, tag: v1.0.0) docs: Update README
+* b61604b docs: Add FAQ section
+* cdedaca docs: Add FAQ section
+*   584989d Merge pull request #1 from satishpadikondala/feature/new-feature
+|\  
+| | * 6306c71 (origin/feature/new-feature, feature/new-feature) feat: Add new feature
+| |/  
+| * 86aea6e feat: Add new feature
+| * e4c7811 ✅ Phase 3 merge complete — unified main and conflict-simulator branches
+|/| 
+| * d3dd9b2 (instructor/conflict-simulator, conflict-simulator) updating conflict-simulator
+* |   0081262 merge: Resolve all conflicts between main and dev branches
+|\ \  
+| * | 02011a5 (instructor/dev, dev) updating dev
+| |/  
+* | 0312c6f (instructor/main, instructor/HEAD) updating main
+* | fadfd24 Revise README for DevOps Simulator project
+|/  
+* ae630eb Initial commit
